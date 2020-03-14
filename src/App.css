@@ -11,14 +11,13 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 3px;
+  --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 /* globals */
 body {
   padding-top: 66px;
-  padding-bottom: 50px;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -117,8 +116,6 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
-  text-align: right;
-
 }
 .nav-links a {
   display: block;
@@ -255,7 +252,6 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
 }
 .services p {
   width: 80%;
@@ -487,6 +483,7 @@ h6 {
   width: 100%;
   background: transparent;
   font-size: 1rem;
+  border-radius: 0.3rem;
 }
 .size-inputs {
   display: flex;
