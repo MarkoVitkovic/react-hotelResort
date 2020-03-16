@@ -12,15 +12,6 @@ function RoomsList({rooms}) {
         }
       </div>
   </section>
-
-
-
-
-
-  return (
-    <div>l</div>
-
-  );
 }
 
 export default RoomsList;

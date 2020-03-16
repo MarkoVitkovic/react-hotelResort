@@ -56,7 +56,7 @@ getRoom = slug => {
   };
 handleChange = event => {
   const target = event.target
-  const value = event.type === "checkbox" ? target.checked : target.value;
+  const value = target.type === "checkbox" ? target.checked : target.value;
   const name = event.target.name;
   this.setState(
   {
@@ -72,6 +72,7 @@ filterRooms = () => {
   let temp = [...rooms];
  //transform values
   capacity = parseInt(capacity);
+  price = parseInt(price);
 
   //filter by type
   if(type !== 'all')
@@ -83,6 +84,15 @@ filterRooms = () => {
   {
     temp = temp.filter(room => room.capacity >= capacity)
   }
+  //filter by price
+  temp = temp.filter(room => room.price <= price);
+  //filter by size
+  temp = temp.filter(room => room.size >= minSize && room.size <= maxSize);
+  //filter by breakfast
+if(breakfast){temp = temp.filter(room => room.breakfast === true)}
+  //filter by pets
+if(pets){temp = temp.filter(room => room.pets === true)}
+  //change state
   this.setState({
     sortedRooms: temp,
   })
