@@ -51,23 +51,25 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Code Examples
 Code:</br>
- `<React.Fragment>`</br>
- `       <div className="py-5">`</br>
- `         <div className="container">`</br>
-  `        <Title name="our" title="products" />`</br>
-   `         <div className="row">`</br>
-    `        <ProductConsumer>`</br>
-     `         {(value) => {`</br>
-      `          return value.products.map(product => {`</br>
-       `           return <Product key = {product.id} product = {product} />`</br>
-        `        })`</br>
-         `     }}`</br>
-       `     </ProductConsumer>`</br>
-       `   </div>`</br>
-       `   </div>`</br>
-       ` </div>`</br>
-      `</React.Fragment>`</br>
+`class FeaturedRooms extends Component {`</br>
+ ` static contextType = RoomContext;`</br>
+`render(){`</br>
+ ` let {loading, featuredRooms : rooms} = this.context;`</br>
+ `rooms = rooms.map(room => {`</br>
+  ` return <Room key={room.id} room={room}/>`</br>
+ `})`</br>
+  `return (`</br>
+   ` <section className="featured-rooms">`</br>
+    `  <Title title="featured rooms"/>`</br>
+     ` <div className="featured-rooms-center">`</br>
+      `  {loading?<Loading/>:rooms}`</br>
+      `</div>`</br>
 
+    `</section>`</br>
+  `);`</br>
+`}`</br>
+`}`</br>
+`export default FeaturedRooms;`</br>
 
 ## Features
 List of features ready and TODOs for future development
