@@ -64,8 +64,7 @@ Code:</br>
      ` <div className="featured-rooms-center">`</br>
       `  {loading?<Loading/>:rooms}`</br>
       `</div>`</br>
-
-    `</section>`</br>
+     `</section>`</br>
   `);`</br>
 `}`</br>
 `}`</br>
