@@ -12,12 +12,12 @@
 * [Contact](#contact)
 
 ## General info
-Site made with react, node.js and CSS3. On front page zou will find three types of rooms, go and check, and when you open one of them, </br>
-you will see info about that room, also in navbar you have "rooms" option, there are all rooms from hotel, you can search rooms by </br>
+Site made with react, node.js and CSS3. On front page you will find three types of rooms, go and check, and when you open one of them, 
+you will see info about that room, also in navbar you have "rooms" option, there are all rooms from hotel, you can search rooms by 
 filters, see image below.
 
 ## Screenshots
-![](https://github.com/MarkoVitkovic/react-store/blob/master/store.png)
+![](https://github.com/MarkoVitkovic/react-hotelResort/blob/master/rooms.png)
 
 ## Technologies
 * [React](https://reactjs.org/docs/getting-started.html) - version 16.13.1
