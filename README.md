@@ -1,5 +1,5 @@
-# E-commerce site
-> e-commerce site made with react. 
+# Hotel Resort
+> Project made with react. Hotel resort app. 
 
 ## Table of contents
 * [General info](#general-info)
@@ -12,9 +12,9 @@
 * [Contact](#contact)
 
 ## General info
-Site made with react, node.js and bootstrap. Basically on front page you see list of all products, you can add products in cart, or </br>
-you can see details for specific product. In cart you can remove or add more same items, also project have paypal button, so you </br>
-can test it.
+Site made with react, node.js and CSS3. On front page zou will find three types of rooms, go and check, and when you open one of them, </br>
+you will see info about that room, also in navbar you have "rooms" option, there are all rooms from hotel, you can search rooms by </br>
+filters, see image below.
 
 ## Screenshots
 ![](https://github.com/MarkoVitkovic/react-store/blob/master/store.png)
@@ -24,7 +24,7 @@ can test it.
 * [Node.js](https://nodejs.org/en/docs/) - version 13
 * [CSS](https://devdocs.io/css/) - version 3
 * [React-dom](https://github.com/facebook/react) - version 16.13.1
-* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - version 4
+
 
 ## Setup
 Open terminal(cmd) and navigate:</br>
